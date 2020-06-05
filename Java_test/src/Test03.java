@@ -13,7 +13,7 @@ public class Test03 {
 			System.out.println("num["+i+"]="+num[i]);
 			i++;
 		}
-		System.out.println("รัวี : "+hap);
+		System.out.println("รัวี : "+ hap);
 	}
 
 }

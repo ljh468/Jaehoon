@@ -11,7 +11,7 @@ public class Ex06_08 {
 		hap +=i;
 		
 		}
-	
+		
 		System.out.println("1에서10까지의 합:" + hap);
 	}
 

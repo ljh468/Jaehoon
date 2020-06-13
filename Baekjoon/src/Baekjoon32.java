@@ -1,3 +1,4 @@
+// 평균점수 구하기 40점이하는 40점으로
 import java.util.Scanner;
 
 public class Baekjoon32{

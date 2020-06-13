@@ -1,3 +1,5 @@
+// 더하기 사이클 (숫자의 앞자리추출, 뒷자리 추출)
+// 원래 수로 돌아올 때까지 연산을 반복하는 문제
 import java.util.Scanner;
 
 public class Baekjoon30{

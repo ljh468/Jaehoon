@@ -1,6 +1,7 @@
+// º°Âï±â 02
 import java.util.Scanner;
 
-public class Backjoon27 {
+public class Baekjoon27 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();

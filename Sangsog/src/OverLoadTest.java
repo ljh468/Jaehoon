@@ -3,7 +3,7 @@ public class OverLoadTest {
 	
 	public static void main(String[] arg) {
 		
-		int res1 = OverLoading.sum(1, 2);
+		int res1 = OverLoading.le(1, 2);
 		int res2 = OverLoading.sum(1, 2, 3);
 		int res3 = OverLoading.sum(1, 2, 3, 4);
 

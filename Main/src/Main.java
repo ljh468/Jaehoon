@@ -1,14 +1,17 @@
 import java.util.*;
 
-class Main {
+public class Main {
+	static int m, i, n;
+
 	public static void main(String[] a) {
-		Scanner c = new Scanner(System.in);
-		int k = c.nextInt(), n = c.nextInt(), b = n, s = n, i = 1;
-		for (; i < k; i++) {
-			n = c.nextInt();
-			b = n > b ? n : b;
-			s = n > s ? s : n;
+		Scanner sc = new Scanner(System.in);
+		for (int j = 1; j <= 9; j++) {
+			n = sc.nextInt();
+			if (n > m) {
+				m = n;
+				i = j;
+			}
 		}
-		System.out.print(s + " " + b);
+		System.out.print(m + "\n" + i);
 	}
 }

@@ -2,8 +2,9 @@
 public class OverLoading {
 	
 	
-	public static int sum(int a, int b) {
-		return sum(a, b, 0, 0);
+	public static int le(int a, int b) {
+		int lee = (a+b)*(a-b);
+		return lee;
 	}
 
 	public static int sum(int a, int b, int c) {

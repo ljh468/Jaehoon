@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-public class Ex09 {
+public class Ex10 {
  
     public static void main(String[] str) {
                 
         Scanner s = new Scanner(System.in);
         
-        int i = s.nextInt();
-        System.out.println(10/2);
+        String arr = s.nextLine();
+        System.out.println(arr);
     }
- 
 }

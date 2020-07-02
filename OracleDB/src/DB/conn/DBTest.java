@@ -10,7 +10,6 @@ public class DBTest {
 	                                     //try catch 밖의 부분 까지 에러를 잡는다(전체범위)
       Connection conn = null;
       String url = "jdbc:oracle:thin:@localhost:1521:orcl"; // 외워야함!
-      
       String user = "myuser";
       String passwd = "1234";
 

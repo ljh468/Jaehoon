@@ -6,10 +6,47 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class PrintUserinfo {
 
 	public static void main(String[] args) throws SQLException{
+		
+		// 입력받는 값을 전달하기 위해 객체 생성
+		Map<String, String> pMap = new HashMap<String, String>();
+		
+		Scanner s = new Scanner(System.in);
+	
+		System.out.println("-------------------------------");
+		System.out.println("회원아이디를 입력하시오 : ");
+		pMap.put("user_id", s.next());
+		
+		System.out.println("-------------------------------");
+		System.out.println("회원이름을 입력하시오 : ");
+		pMap.put("user_nm", s.next());
+		
+		System.out.println("-------------------------------");
+		System.out.println("이메일을 입력하시오 : ");
+		pMap.put("email", s.next());
+		
+		System.out.println("-------------------------------");
+		System.out.println("주소를 입력하시오 : ");
+		pMap.put("addr", s.next());
+		
+		// 사용이 끝나면 메모리 비우기
+		s.close();
+		
+		// DB 등록을 위한 객체를 메모리에 올림
+		DBinsert dbI = new DBinsert();
+		
+		// DB 등록하기 위한 함수 호출
+		dbI.doInsert(pMap);
+		
+		// DB 등록하기 위한 함수 호출
+		dbI.doInsert(pMap);
+		
+		// 사용이 끝나면 메모리 비우기
+		pMap = null;
 		
 		// 회원 정보를 가져오기 위해 DBUserInfo 객체를 메모리에 올림
 		DBUserinfo ui = new DBUserinfo();

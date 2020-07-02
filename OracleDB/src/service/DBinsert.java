@@ -26,8 +26,7 @@ public class DBinsert {
 			sql += "?, "; // 첫번쨰 컬럼인 USER_ID과 매칭됨
 			sql += "?, "; // 두번쨰 컬럼인 USER_NM과 매칭됨
 			sql += "?, "; // 세번쨰 컬럼인 EMAIL과 매칭됨
-			sql += "?, "; // 네번쨰 컬럼인 ADDR과 매칭됨
-			sql += "?) "; // 다섯번쨰 컬럼인 USER_ID과 매칭됨
+			sql += "?) "; // 네번쨰 컬럼인 ADDR과 매칭됨 (REG_DT)
 
 			// 오라클에 전달될 SQL 쿼리를 저장하기
 			pstmt = conn.prepareStatement(sql);
@@ -38,20 +37,20 @@ public class DBinsert {
 
 			String user_id = pMap.get("user_id");
 			System.out.println("전달받은 user_id : " + user_id);
-			pstmt.setString(++idx, user_id);
-			// 키값, 변수 첫번째
+			pstmt.setString(++idx, user_id); // 첫번째 ?
+			
 			String user_nm = pMap.get("user_nm");
 			System.out.println("전달받은 user_nm : " + user_nm);
-			pstmt.setString(++idx, user_id);
-			// 키값, 변수 두번째
+			pstmt.setString(++idx, user_id); // 두번째 ?
+			
 			String email = pMap.get("email");
 			System.out.println("전달받은 email : " + email);
-			pstmt.setString(++idx, email);
-			// 키값, 변수 세번째
+			pstmt.setString(++idx, email); // 세번쨰 ?
+			
 			String addr = pMap.get("addr");
 			System.out.println("전달받은 addr : " + addr);
-			pstmt.setString(++idx, addr);
-			// 키값, 변수 네번째
+			pstmt.setString(++idx, addr); // 네번째 ?
+			
 
 			// insert 쿼리 실행
 			int res = pstmt.executeUpdate();

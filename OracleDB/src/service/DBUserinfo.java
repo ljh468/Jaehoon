@@ -13,7 +13,7 @@ import DB.conn.DBConn;
 public class DBUserinfo {
 	public List<Map<String, String>> getUserInfo() {
 		
-		//DB조회 결과를 저장하기 위한 List와 Map을 활용한 데이터 구조
+		//  DB조회 결과를 저장하기 위한 List와 Map을 활용한 데이터 구조
 		List<Map<String, String>> rList = null;
 
 		try {
@@ -21,7 +21,7 @@ public class DBUserinfo {
 			// 오라클 접속하기
 			Connection conn = DBConn.getConnection();
 			
-			// 오라클에 SQL쿼리를 전달하기 위해 객체
+			// 오라클에 SQL쿼리를 전달하기 위한 객체
 			PreparedStatement pstmt = null;
 			
 			// SQL선언
@@ -83,6 +83,7 @@ public class DBUserinfo {
 			// 오라클로부터 전달받은 결과는 사용이 끝나면 바로 메모리를 해제해야함
 			// 해제하지 않으면 오라클 DB에 계속 연결이 유지되고 있어 DB의 성능이 떨어짐
 			rs.close();
+			
 			// DB연결 끊기 (DB접속 종료)
 			DBConn.DBClose(conn);
 			

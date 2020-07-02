@@ -9,13 +9,15 @@ public class DBTest {
    public static void main(String[] args) throws SQLException {
 	                                     //try catch 밖의 부분 까지 에러를 잡는다(전체범위)
       Connection conn = null;
-      String url = "jdbc:oracle:thin:@localhost:1521:orcl"; // 외워야함!
+      String url = "jdbc:oracle:thin:@localhost:1521:xe"; // 외워야함!
       String user = "myuser";
       String passwd = "1234";
 
       try {
          Class.forName("oracle.jdbc.driver.OracleDriver");
+         // 오라클 드라이버 로딩 , driverManager에 등록
          conn = DriverManager.getConnection(url, user, passwd);
+         // connection 객체를 연결, DriverManager에 등록된 각드라이버들은 getConnection을 사용하여 식별
          System.out.println("오라클 접속 성공!!");
          
       } catch (ClassNotFoundException e) {

@@ -9,7 +9,7 @@ public class DBConn {
 	/**
 	 * 오라클 db와 연결하기
 	 * 
-	 * @return Connection 오라클 db 연결 객체
+	 * @return 드Connection 오라클 db 연결 객체
 	 */
 
 	public static Connection getConnection() throws SQLException {
@@ -24,7 +24,7 @@ public class DBConn {
 			// 오라클 드라이버 로딩 , driverManager에 등록
 			
 			conn = DriverManager.getConnection(url, user, passwd);
-			// connection 객체를 연결, DriverManager에 등록된 각드라이버들은 getConnection을 사용하여 식별
+			// connection 객체를 연결, DriverManager에 등록된 각라이버들은 getConnection을 사용하여 식별
 			
 			System.out.println("오라클 접속 성공!!");
 

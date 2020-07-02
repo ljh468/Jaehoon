@@ -42,9 +42,6 @@ public class PrintUserinfo {
 		// DB 등록하기 위한 함수 호출
 		dbI.doInsert(pMap);
 		
-		// DB 등록하기 위한 함수 호출
-		dbI.doInsert(pMap);
-		
 		// 사용이 끝나면 메모리 비우기
 		pMap = null;
 		

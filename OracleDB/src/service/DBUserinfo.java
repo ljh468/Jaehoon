@@ -38,8 +38,7 @@ public class DBUserinfo {
 			// 테이블 조회 결과를 저장하기 위한 데이터 구조를 메모리에 올리기
 			rList = new ArrayList<Map<String, String>>();
 
-			
-			// 테이블 조회 결과를 저장하기 위한 데이터 구조를 메모리에 올리기
+
 			while (rs.next()) {
 				
 				// 테이블의 레코드 한줄마다 rMap 객체 저장

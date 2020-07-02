@@ -6,11 +6,13 @@ import java.sql.SQLException;
 
 public class DBConn {
 
+	
 	/**
 	 * 오라클 db와 연결하기
 	 * 
 	 * @return Connection 오라클 db 연결 객체
-	 */
+	 */ 
+	 
 
 	public static Connection getConnection() throws SQLException {
 	                                     //try catch 밖의 부분 까지 에러를 잡는다(전체범위)

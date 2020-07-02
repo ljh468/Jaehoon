@@ -8,5 +8,6 @@ public class Ex10 {
         
         String arr = s.nextLine();
         System.out.println(arr);
+        System.out.println();
     }
 }

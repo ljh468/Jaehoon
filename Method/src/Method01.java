@@ -4,7 +4,6 @@ public class Method01 {
 	public static void main(String[] args) {
 		// 무조건 자바 시작할 때 샐행되는 첫번쨰 함수(메서드)
 		System.out.println("main함수 호출시작!!");
-		
 		int res = sum(1,2);
 		System.out.println("sum함수 실행결과 : "+res);
 		System.out.println("main함수 호출 끝!!");

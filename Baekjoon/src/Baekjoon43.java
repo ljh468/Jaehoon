@@ -1,3 +1,4 @@
+// OX Ã£±â
 import java.util.Scanner;
  
 public class Baekjoon43 {

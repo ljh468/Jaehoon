@@ -1,3 +1,4 @@
+//평균 넘은 비율 찾기
 import java.util.Scanner;
 
 public class Baekjoon44 {

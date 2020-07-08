@@ -1,3 +1,4 @@
+//평균 점수 고치기
 import java.util.Scanner;
 
 public class Baekjoon42 {

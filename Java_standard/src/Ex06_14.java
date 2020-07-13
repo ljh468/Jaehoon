@@ -10,7 +10,7 @@ class Ex06_14 {
 	}
 	
 	public  Ex06_14() {
-		System.out.println("持失切");
+		System.out.println("持失切"); // 持失切 (iv 段奄鉢)
 	}
 	
 	public static void main(String[] args) {

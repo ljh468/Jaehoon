@@ -18,6 +18,9 @@ class CaptionTv extends Tv2{ // CaptionTv는 Tv에 캡션(자막)을 보여주는 기능을 추
 public class Ex07_01 {
 	public static void main(String[] args) {
 		CaptionTv ctv = new CaptionTv();
+		ctv.power();
+		ctv.power();
+		System.out.println(ctv.power);
 		ctv.channel =10;	// 조상클래스로부터 상속받은 멤버
 		ctv.channelup();	// 조상클래스로부터 상속받은 멤버
 		System.out.println(ctv.channel);

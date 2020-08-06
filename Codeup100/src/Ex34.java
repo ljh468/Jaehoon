@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class Ex34{
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		int a = s.nextInt();
-		int b = s.nextInt();
-		int c = s.nextInt();
+		int a1 = s.nextInt();
+		int b2 = s.nextInt();
+		int c3 = s.nextInt();
 		
-		System.out.println(a+b+c);
-		System.out.printf("%.1f",(a+b+c)/(float)3);
+		System.out.println(a1+b2+c3);
+		System.out.printf("%.1f",(a1+b2+c3)/(float)3);
 	}
 }
 

@@ -1,23 +1,25 @@
-
-// 문자열 반복
+// 단어공부
 import java.util.Scanner;
 
 public class Baekjoon51 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-
-		int n = s.nextInt();
-		for (int j = 0; j < n; j++) {
-			int a = s.nextInt();
-			String b = s.next();
-
-			for (int i = 0; i < b.length(); i++) {
-				for (int k = 0; k < a; k++) {
-					System.out.print(b.charAt(i));
-				}
-
+		String str = s.nextLine().toUpperCase();
+		
+		int[] num = new int[26];
+		int max = 0;
+		char res = '?';
+		
+		for(int i = 0; i<str.length(); i++) {
+			num[str.charAt(i) - 'a']++;
+			if(max < num[str.charAt(i)-'a']) {
+				max = num[str.charAt(i)-'a'];
+				res = str.charAt(i);
+			}else if (max == num[str.charAt(i)-'a']) {
+				res = '?';
 			}
-			System.out.println();
 		}
+		System.out.println(res);
+		
 	}
 }

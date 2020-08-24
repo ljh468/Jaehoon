@@ -2,7 +2,20 @@
 public class Test00 {
 
 	public static void main(String[] args) {
-		System.out.println("잔디 심기 테스트용");
+		int i = 3;
+		int k = 1;
+		while(i<9) {
+			if((i==3||i==5)&&k==1) {
+				System.out.println("<"+i+"단>");
+			}
+			System.out.println(i+"*"+k+"="+(i+k));
+			
+			k++;
+			if(k>9) {
+				k=1;
+				i++;
+				System.out.println();
+			}
+		}
 	}
-
 }

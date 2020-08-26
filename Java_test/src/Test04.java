@@ -4,21 +4,23 @@ import java.util.List;
 
 public class Test04 {
 	public static void main(String[] args) {
-		List<String> rList = new ArrayList<>();
-		rList.add("°´Ã¼ÁöÇâÇÁ·Î±×·¥");
+		List<String> rList = new ArrayList<String>();
+		rList.add("°´Ã¼ÁöÇâÇÁ·Î±×·¡¹Ö");
 		rList.add("ÇÏµÓ");
 		rList.add("MongoDB");
 		
-		int i=0;
+		int i = 0;
 		Iterator<String> it = rList.iterator();
 		while(it.hasNext()) {
-			String num = it.next();
-//			if(i==0)
-			if(num.equals("ÇÏµÓ"))
-			System.out.println("<"+num+">");
-			else
-			System.out.println(num);
+			String str = it.next();
+//		    if(str.equals("°´Ã¼ÁöÇâÇÁ·Î±×·¡¹Ö")){
+			if(i==0) {
+				System.out.println("<"+str+">");
+			}else {
+				System.out.println(str);
+			}
 			i++;
-		}
+		}		
 	}
 }
+

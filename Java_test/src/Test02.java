@@ -1,20 +1,19 @@
 
 public class Test02 {
 	public static void main(String[]args) {
-		int a;
-		int b;
-		a=2;
-		b=1;
-		while(a<10) {
-			if(a==3||a==5)
-				System.out.println("("+a+"´Ü)");
-			while(b<10) {
-				System.out.println(a+"*"+b+"="+(a*b));
-				b++;
+		int i = 3;
+		int k = 1;
+		while(i<9) {
+			if(i==3||i==5) {
+				System.out.println("<"+i+"´Ü>");
 			}
-			a++;
-			b=1;
+			k=1;
+			while(k<10) {
+				System.out.println(i+"*"+k+"="+(i*k));
+				k++;
+			}
 			System.out.println();
+			i++;
 		}
 		
 	}

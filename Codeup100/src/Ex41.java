@@ -6,7 +6,7 @@ public class Ex41 {
 		Scanner sc = new Scanner(System.in);
 
 		int a = sc.nextInt();
-		int b = ~a;
+		int b = ~a;  // 비트연산자 XOR
 		
 		System.out.println(b);
 

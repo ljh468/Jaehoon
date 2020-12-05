@@ -13,14 +13,12 @@ public class Ex43 {
 
 
 /*
- 비트단위 연산으로 XOR계산
+ 비트단위 연산으로 XOR계산 00 0 01 1 11 0 10 1
 public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-
 		int a = s.nextInt();
 		int b = s.nextInt();
 		
 		System.out.println(a^b);
-
 	}
 */

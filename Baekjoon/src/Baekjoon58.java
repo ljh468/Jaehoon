@@ -1,4 +1,4 @@
-// 수1 설탕배달
+// 수1 설탕배달 문제
 import java.util.Scanner;
 
 public class Baekjoon58 {

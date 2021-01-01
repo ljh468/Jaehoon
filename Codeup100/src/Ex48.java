@@ -16,13 +16,17 @@ public class Ex48 {
 
 /*
  * 0 입력될 때까지 무한 출력하기1 
- * public static void main(String[] args) { 
- * Scanner s = new Scanner(System.in);
- * 
- * while(true) { 
- * int num = s.nextInt();https://codeup.kr/d_thread.php?tid=5530&cid=2068
- * if (num == 0) { 
- * 		break; 
- * } 
- * System.out.println(num); }
+	public class Ex48 {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+
+		while (true) {
+			int num = s.nextInt();
+			if (num == 0) {
+				break;
+			}
+			System.out.println(num);
+		}
+	}
+}
  */

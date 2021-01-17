@@ -5,13 +5,14 @@ import java.util.Scanner;
 			
 			Scanner s =new Scanner(System.in);
 			
-			String  a = s.nextLine();
+			String a = s.nextLine();
 			
 			int num = Integer.parseInt(a,16);
-			
+			System.out.println(num);
 			 for(int i=1; i<16; i++) {
 	                
 	                System.out.format("%X*%X=%X%n",num,i,num*i);
+	                
 	            }
 		}
 	}

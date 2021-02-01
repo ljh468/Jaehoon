@@ -4,10 +4,10 @@ public class Ex58 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-        long a = sc.nextLong();
-        long d = sc.nextLong();
-        long n = sc.nextLong();
+		Scanner s = new Scanner(System.in);
+        long a = s.nextLong();
+        long d = s.nextLong();
+        long n = s.nextLong();
         
      
        System.out.print(a+ d*(n-1));

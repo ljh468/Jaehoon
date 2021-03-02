@@ -1,4 +1,4 @@
-//  [기초-2차원배열] 바둑알 십자 뒤집기(설명)
+//  [기초-2차원배열] 바둑알 십자 뒤집기
 import java.util.Scanner;
 
 public class Ex66 {

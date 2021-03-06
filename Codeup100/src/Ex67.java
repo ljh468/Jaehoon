@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// [기초-2차원배열] 설탕과자 뽑기
 public class Ex67 {
 	
 	public static void main(String[] args) {

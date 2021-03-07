@@ -1,53 +1,64 @@
-// 코드업 기초 100제 완료
 import java.util.Scanner;
-
+// 1099 : [기초-2차원배열] 성실한 개미
 public class Ex68 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
 
-        // 개미굴 정보 입력받고 저장
-        int[][] antCave = new int[10][10];
-        for(int i = 0; i < 10; i++) {
-            String caveInput = sc.nextLine();
-            String[] caveInputSplit = caveInput.split(" ");
-            for(int j = 0; j < 10; j++) {
-                antCave[i][j] = Integer.parseInt(caveInputSplit[j]);
-            }
-        }
+		Scanner scan = new Scanner(System.in);
 
-        int[][] antPath;
-        antPath = antCave;
+		int[][] plate = new int[10][10];
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j++) {
+				plate[i][j] = scan.nextInt();
+			}
+		}
+		
+		// 맨 아래 가장 오른쪽에 도착한 경우, 더 이상 움직일 수 없는 경우, 먹이를 찾은 경우 END
+		// 오른쪽이나 아래쪽으로만 움직 일 수 있음 (x+1) or (y+1)
+		// (2,2) 부터 시작
+		
+		int x = 1;
+		int y = 1;
 
-        // 개미 경로 표시
-        boolean isReached = false;
-        int x,y;
-        x = 1; y = 1;
-        while(!isReached) {
-            if(antPath[x][y + 1] == 1) { // 오른쪽이 막힌 경우
-                if(antPath[x + 1][y] == 1) { // 오른쪽이 막혔을 때 아래쪽도 막힌 경우(도착)
-                    break;
-                } 
-                else { // 아래쪽은 열린 경우, 0 또는 2
-                    x++;
-                }
-            } 
-            else if(antPath[x][y + 1] != 1) { // 오른쪽이 0 또는 2 }
-                y++;
-            }
-            if(antPath[x][y] == 2) { // 도착
-                    isReached = true;
-            }
-            antPath[x][y] = 9;
-        }
+		while (x < 10 && y < 10) {
 
-        antPath[1][1] = 9; // 시작점 마크
-
-        // 개미굴 출력
-        for(int i = 0; i < 10; i++) {
-            for(int j = 0; j < 10; j++) {
-                System.out.print(antPath[i][j] + " ");
-            }
-            System.out.println("");
-        }
-    }
+			if (plate[1][1] == 2) {
+				plate[1][1] = 9;
+				break;
+			} else {
+				plate[1][1] = 9;
+			}
+			
+			if (x < 10 && y+1 < 10 && plate[x][y+1] == 0) {
+				plate[x][y+1] = 9;
+				y++;
+			} 
+			else if (x < 10 && y+1 < 10 && plate[x][y+1] == 2) {
+				plate[x][y+1] = 9;
+				break;
+			} 
+			else if (x+1 < 10 && y < 10 && plate[x+1][y] == 0) {
+				plate[x+1][y] = 9;
+				x++;
+			} 
+			else if (x+1 < 10 && y < 10 && plate[x+1][y] == 2) {
+				plate[x+1][y] = 9;
+				break;
+			} 
+			else {
+				break;
+			}
+			
+		}
+		
+		
+		for (int n = 0; n < 10; n++) {
+			for (int m = 0; m < 10; m++) {
+				System.out.printf("%d ", plate[n][m]);
+			}
+			System.out.println();
+		}
+		
+	}
+	
 }
